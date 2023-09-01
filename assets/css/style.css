@@ -259,7 +259,7 @@ a:focus {
     animation: marquee 15s linear infinite;
 }
 .marquee span:hover {
-    animation-play-state: running;
+    animation-play-state: paused;
 }
 
 /* Make it move */
@@ -275,7 +275,7 @@ a:focus {
 
 /*2. Main Header*/
 nav {
-    padding: 0.5rem 0 !important;
+    /* padding: 0.5rem 0 !important; */
 }
 .navbar-nav .nav-link {
     color: #0c0b39;
@@ -1956,4 +1956,13 @@ li {
     font-size: 22px;
     line-height: 1.2em;
     font-weight: bold;
+}
+
+.clg-logo{
+    width: 80%;
+    height: auto;
+}
+
+.navbar {
+    padding: 0;
 }
