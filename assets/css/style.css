@@ -303,7 +303,7 @@ nav {
     background-position: 100%;
 }
 .navbar-nav .nav-item .nav-link:hover {
-    transition: all 0.4s cubic-bezier(0, 0, 0.23, 1);
+    /* transition: all 0.4s cubic-bezier(0, 0, 0.23, 1); */
     background-position: 0%;
 }
 .dropdown-toggle::after {
