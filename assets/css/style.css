@@ -413,6 +413,7 @@ a.dropdown-item:hover {
     background: white;
     z-index: 999;
     box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
+    transition: all 600ms;
 }
 
 /*3. Slider*/
@@ -1458,6 +1459,7 @@ li {
     background: #e38b00 !important;
     height: 40px !important;
     width: 40px !important;
+    border-radius: 50% !important;
     top: unset;
     bottom: 20px;
 }
