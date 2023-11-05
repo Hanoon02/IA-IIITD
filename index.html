@@ -158,12 +158,12 @@
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
           <div class="sec-title"> <span class="title">Our Programs</span>
-            <h2>Learn a new skills online on your time</h2>
+            <h2>Explore Btech, Mtech, and Ph.D. Opportunities at IIITD</h2>
             <div class="divider"> <span class="fa fa-mortar-board"></span> </div>
           </div>
           <p class="p-17">IIIT-Delhi takes pride in providing interdisciplinary education options to our international students by providing them a platform where knowledge meets achievement; history meets future and ambitions meets inspiration.</p>
           <p class="p-17"></p>
-          <button type="button" class="btn theme-orange theme-btn my-2 join-us">Join Us</button>
+          <a type="button" class="btn theme-orange theme-btn my-2 join-us" href="https://iiitd.ac.in/ia-btech/">Join Us</a>
         </div>
         <div class="col-lg-6">
           <div class="course-block  d-flex justify-content-between bg-light pa-2 mx-5 my-3" data-aos="fade-up"
@@ -477,20 +477,20 @@
               <div class="joinus-content theme-orange mx-5" data-aos="zoom-in" data-aos-duration="550">
                 <p class="text-uppercase font-weight-bold mb-0">Join Us</p>
                 <h2 class="font-weight-bold mb-3">Talk With Our Expert</h2>
-                <form>
+                <form id="myForm">
                   <div class="form-group">
                     <label for="exampleInputName">Name</label>
                     <input type="text" class="form-control" id="exampleInputName"
-                                               placeholder="Enter Your Name">
+                                               placeholder="Enter Your Name" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1"
-                                               placeholder="Enter Your Email">
+                                               placeholder="Enter Your Email" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleFormControlSelect1">Course</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="exampleFormControlSelect1" required>
                       <option>Ph.D.</option>
                       <option>B.Tech.</option>
                       <option>M.Tech.</option>
@@ -569,5 +569,24 @@
 <script src="assets/js/aos.js"></script> 
 <script src="assets/js/script.js"></script> 
 <script src="assets/js/page/home/home.js"></script>
+<script>
+	const form = document.getElementById('myForm');
+	form.addEventListener('submit', function (e) {
+		e.preventDefault(); // Prevent the form from submitting and reloading the page
+		alert("Form submitted.")
+
+		// Get the input values
+		const name = document.getElementById('exampleInputName').value;
+		const email = document.getElementById('exampleInputEmail1').value;
+		const course = document.getElementById('exampleFormControlSelect1').value;
+
+
+		console.log("Home page form response.");
+		console.log('{ Name: ' + name);
+		console.log('Email: ' + email);
+		console.log('Course: ' + course+ '}');
+  });
+
+</script>
 </body>
 </html>
