@@ -1990,3 +1990,31 @@ li {
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
 }
+
+
+.collab-container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 15px;
+}
+
+.collab-collaboration-section {
+    padding: 20px 0;
+}
+
+.collab-h3 {
+    color: #333;
+}
+
+.collab-list-group {
+    list-style: none;
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Adjust the number (5) as needed */
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+
+.collab-collab-title {
+    color: rgb(0, 0, 0);
+}
